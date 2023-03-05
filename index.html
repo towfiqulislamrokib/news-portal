@@ -8,8 +8,8 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
   </head>
-  <body class="container"> 
-    <header>
+  <body> 
+    <header class="container">
      <section class="d-flex align-items-center justify-content-between container mt-2" >
         <h1><span class="text-danger">News</span>Portal</h1>
         <div>
@@ -22,7 +22,7 @@
         </div>
       </section>
     </header>
-    <main>
+    <main class="container">
         <section class="mt-4">
          <!-- <h2 onclick="loadNews('05')">Entertaiment</h2> -->
          <ul class="d-flex list-inline">
@@ -41,31 +41,66 @@
             <div id="news-all" >
             </div>
         </section> 
-        <section>
+        <section class="mb-4">
            <div id="first-news">
              
            </div>
         </section>
         <!-- Modal -->
-  <div class="modal fade" id="phoneModal" tabindex="-1" aria-labelledby="phoneModal" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-              <div class="modal-header">
-                <h1 class="modal-title fs-5" id="newsTitle"></h1>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div id="modal-news-detail" class="modal-body">
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-              </div>
+      <section>
+        <div class="modal fade" id="phoneModal" tabindex="-1" aria-labelledby="phoneModal" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="newsTitle"></h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div id="modal-news-detail" class="modal-body">
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
           </div>
-        </div>
-  </div>
-  <footer class="mt-4">
-     
-  </footer> 
-</main>
+      </div>
+      
+      </section>
+
+       
+  </main>
+
+  <!-- Footer Section start-->
+  <footer class="mt-6 mb-2 container">
+     <div class="d-flex justify-content-between">
+         <div>
+          <h4 class="fs-3">Office Address</h4>
+          <p  class="fs-5 font-weight-bold">413 West Shewrapara, Mirpur-1212</p>
+          <p  class="fs-5 font-weight-bold">Support: rokib.ewubd.15@gmail.com</p>
+          <p  class="fs-5 font-weight-bold">Helpline: 01521314153</p>
+         </div>
+          <div class="d-flex flex-column">
+            <h4 class="fs-3">Useful Link</h4>
+            <a class="text-secondary text-decoration-none"  href="">Blog</a>
+            <a class="text-secondary text-decoration-none" href="">Success</a>
+            <a class="text-secondary text-decoration-none" href="">About</a>
+            <a class="text-secondary text-decoration-none" href="">Refund Policy</a>
+          </div>
+          <div>
+            <h4 class="fs-3">Useful Link</h4>
+            <a class="fs-3 mx-1 text-info"  href=""><i class='bx bxl-facebook-circle'></i></a>
+            <a class="fs-3 mx-1 text-info" href=""><i class='bx bxl-instagram'></i></a>
+            <a class="fs-3 mx-1 text-info" href="https://www.linkedin.com/in/md-towfiqul-islam-rokib-049a22236/"><i class='bx bxl-linkedin'></i></a>
+            <a class="fs-3 mx-1 text-info" href="https://www.youtube.com/@basicittech2983"><i class='bx bxl-youtube'></i></a>
+          </div>
+     </div>
+     <div class="text-center d-flex justify-content-center">
+      <i class='bx bx-copyright fs-3'></i>
+      <p class="text-monospace">Towfiqul Islam ROkib</p>
+     </div>
+  </footer>
+  
+  <!-- Footer section End -->
+
     <script src="js/api.js"></script>
     <script src="js/show.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
