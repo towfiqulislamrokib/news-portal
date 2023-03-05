@@ -1,0 +1,16 @@
+.nav-text{
+    color: brown;
+}
+.nav-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.list-1{
+    display: flex;
+  
+}
+.list-1 li{
+    margin-left: 10px;
+    list-style: none;
+}
