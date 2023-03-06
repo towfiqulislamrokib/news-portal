@@ -36,8 +36,20 @@
             <li onclick="loadNews('07')" class="mx-3 fs-4">All News</li>
          </ul>
         </section>
+
+        <!-- Spiner section -->
+        <section id="loader" class="d-none">
+          <div style="height: 30px;" class="d-flex align-items-center justify-content-center">
+              <div  class="spinner-border text-info" role="status">
+                <span class="visually-hidden">Loading...</span>
+              </div>
+          </div>
+        </section>
         
         <section class="mt-4">
+           <div id="no-search-found" class="d-none">
+             <h3 class="text-warning text-center m-4">No phone found. Plase Search Correct Format</h3>
+           </div>
             <div id="news-all" >
             </div>
         </section> 
@@ -93,9 +105,9 @@
             <a class="fs-3 mx-1 text-info" href="https://www.youtube.com/@basicittech2983"><i class='bx bxl-youtube'></i></a>
           </div>
      </div>
-     <div class="text-center d-flex justify-content-center">
-      <i class='bx bx-copyright fs-3'></i>
-      <p class="text-monospace">Towfiqul Islam ROkib</p>
+     <div class="text-center d-flex justify-content-center align-items-center">
+      <p> <i class='bx bx-copyright fs-6'></i></p>
+      <p class="text-monospace mt-0 ">Towfiqul Islam ROkib</p>
      </div>
   </footer>
   
